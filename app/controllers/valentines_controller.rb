@@ -4,11 +4,11 @@ class ValentinesController < ApplicationController
   end
 
   def new
-    @valentine = Valentines.new
+    @valentines = Valentine.new
   end
 
   def create
-    @valentine = Valentines.new(valentine_params)
+    @valentine = Valentine.new(valentine_params)
     if @valentine.save
       redirect_to root_path
     else
@@ -17,7 +17,7 @@ class ValentinesController < ApplicationController
   end
 
   def show
-    @valentine = Valentines.find(params[:id])
+    @valentine = Valentine.find(params[:id])
   end
 
   private
