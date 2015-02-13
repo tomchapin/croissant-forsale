@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  verb_past_tense: MyString
+  school_subject: MyString
+  noun_one: MyString
+  adjective_one: MyString
+  color_one: MyString
+  facial_feature: MyString
+  name_of_song: MyString
+  adjective_two: MyString
+  noun_three: MyString
+  holiday: MyString
+  number: 1
+  noun_four: MyString
+  color_two: MyString
+  noun_five: MyString
+  plural_noun: MyString
+  sender_name: MyString
+  ps: MyString
+
+two:
+  verb_past_tense: MyString
+  school_subject: MyString
+  noun_one: MyString
+  adjective_one: MyString
+  color_one: MyString
+  facial_feature: MyString
+  name_of_song: MyString
+  adjective_two: MyString
+  noun_three: MyString
+  holiday: MyString
+  number: 1
+  noun_four: MyString
+  color_two: MyString
+  noun_five: MyString
+  plural_noun: MyString
+  sender_name: MyString
+  ps: MyString
