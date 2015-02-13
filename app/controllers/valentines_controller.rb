@@ -1,6 +1,7 @@
 class ValentinesController < ApplicationController
 
   def index
+    @valentines = Valentine.all
   end
 
   def show
