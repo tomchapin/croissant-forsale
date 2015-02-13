@@ -24,7 +24,7 @@ class ValentinesController < ApplicationController
 
   private
   def valentine_params
-    params.require(:valentine).permit(:verb_past_tense, :school_subject, :noun_one, :adjective_one, :color_one, :facial_feature, :name_of_song, :adjective_two, :noun_three, :holiday, :number, :noun_four, :color_two, :noun_five, :plural_noun, :sender_name, :ps)
+    params.require(:valentine).permit(:adjective_one, :adjective_two, :adjective_three, :verb, :adjective_four, :number, :noun, :color, :adjective_five, :noun_two, :sender)
   end
 
 end
