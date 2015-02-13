@@ -10,3 +10,30 @@ footer {
   margin-top: 1em;
   border-top: 1px solid #ccc;
 }
+
+.btn-create {
+  background: #d934d9;
+  background-image: -webkit-linear-gradient(top, #d934d9, #b82b63);
+  background-image: -moz-linear-gradient(top, #d934d9, #b82b63);
+  background-image: -ms-linear-gradient(top, #d934d9, #b82b63);
+  background-image: -o-linear-gradient(top, #d934d9, #b82b63);
+  background-image: linear-gradient(to bottom, #d934d9, #b82b63);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-create:hover {
+  background: #a63cfc;
+  background-image: -webkit-linear-gradient(top, #a63cfc, #9c34d9);
+  background-image: -moz-linear-gradient(top, #a63cfc, #9c34d9);
+  background-image: -ms-linear-gradient(top, #a63cfc, #9c34d9);
+  background-image: -o-linear-gradient(top, #a63cfc, #9c34d9);
+  background-image: linear-gradient(to bottom, #a63cfc, #9c34d9);
+  text-decoration: none;
+}
