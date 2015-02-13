@@ -3,22 +3,24 @@ class ValentinesController < ApplicationController
   def index
   end
 
+  def show
+    @valentine = Valentine.find(params[:id])
+  end
+
   def new
-    @valentines = Valentine.new
+    @valentine = Valentine.new
   end
 
   def create
     @valentine = Valentine.new(valentine_params)
     if @valentine.save
-      redirect_to root_path
+      redirect_to valentine_path(@valentine)
     else
       render :new
     end
   end
 
-  def show
-    @valentine = Valentine.find(params[:id])
-  end
+
 
   private
   def valentine_params
