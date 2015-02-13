@@ -1,38 +1,111 @@
-<%= form_for @valentine do |f| %>
+<%= form_for(@valentine, html: {class: "form-horizontal"}) do |f| %>
 
-<%= f.label :adjective_one, 'Adjective' %>
-<%= f.text_field :adjective_one %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :adjective_one, 'Adjective' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :adjective_one, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :adjective_two, 'Adjective' %>
-<%= f.text_field :adjective_two %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :adjective_two, 'Adjective' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :adjective_two, :class =>'form-control'  %>
+  </div>
+</div>
 
-<%= f.label :adjective_three, 'Adjective' %>
-<%= f.text_field :adjective_three %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :adjective_three, 'Adjective' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :adjective_three,:class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :verb, 'Verb' %>
-<%= f.text_field :verb %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :verb, 'Verb' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :verb, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :adjective_four, 'Adjective' %>
-<%= f.text_field :adjective_four %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :adjective_four, 'Adjective' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :adjective_four, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :number, 'Number' %>
-<%= f.text_field :number %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :number, 'Number' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :number, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :noun, 'Noun' %>
-<%= f.text_field :noun %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :noun, 'Noun' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :noun, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :color, 'Color' %>
-<%= f.text_field :color %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :color, 'Color' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :color, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :adjective_five, 'Adjective' %>
-<%= f.text_field :adjective_five %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :adjective_five, 'Adjective' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :adjective_five, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :noun_two, 'Noun' %>
-<%= f.text_field :noun_two %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :noun_two, 'Noun' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :noun_two, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.label :sender, 'Your Name' %>
-<%= f.text_field :sender %>
+<div class="form-group">
+  <label class="control-label col-md-2">
+    <%= f.label :sender, 'Your Name' %>
+  </label>
+  <div class="form-controls col-md-4">
+    <%= f.text_field :sender, :class =>'form-control' %>
+  </div>
+</div>
 
-<%= f.submit 'See your Valentine MadLib!' %>
+<div class="form-group">
+  <div class="actions">
+    <div class="col-md-offset-2 col-md-4">
+      <input class="btn btn-danger"
+        <%= f.submit 'See your Valentine MadLib!' %>
+    </div>
+  </div>
+</div>
 
 <% end %>
