@@ -11,31 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150213000103) do
+ActiveRecord::Schema.define(version: 20150213065944) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "valentines", force: :cascade do |t|
-    t.string   "verb_past_tense"
-    t.string   "school_subject"
-    t.string   "noun_one"
-    t.string   "adjective_one"
-    t.string   "color_one"
-    t.string   "facial_feature"
-    t.string   "name_of_song"
-    t.string   "adjective_two"
-    t.string   "noun_three"
-    t.string   "holiday"
-    t.integer  "number"
-    t.string   "noun_four"
-    t.string   "color_two"
-    t.string   "noun_five"
-    t.string   "plural_noun"
-    t.string   "sender_name"
-    t.string   "ps"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string  "adjective_one"
+    t.string  "adjective_two"
+    t.string  "adjective_three"
+    t.string  "verb"
+    t.string  "adjective_four"
+    t.integer "number"
+    t.string  "noun"
+    t.string  "color"
+    t.string  "adjective_five"
+    t.string  "sender"
   end
 
 end
