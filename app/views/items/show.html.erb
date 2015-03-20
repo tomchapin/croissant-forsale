@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-md-4"></div>
   <div class="col-md-4">
-    <%= render partial: "sentence#{item.sentence_id || 1}", locals: { item: @item } %>
+    <%= render partial: "sentence#{@item.sentence_id || 1}", locals: { item: @item } %>
   </div>
   <div class="col-md-4"></div>
 </div>
