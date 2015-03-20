@@ -13,7 +13,7 @@
   <% @items.each do |item| %>
   <tr>
     <td>
-      <%= render "sentence#{item.sentence_id}" %>
+      <%= render partial: "sentence#{item.sentence_id || 1}", locals: { item: item } %>
     </td>
   </tr>
     <% end %>
