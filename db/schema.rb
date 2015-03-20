@@ -28,18 +28,4 @@ ActiveRecord::Schema.define(version: 20150320012741) do
     t.integer "sentence_id"
   end
 
-  create_table "valentines", force: :cascade do |t|
-    t.string  "adjective_one"
-    t.string  "adjective_two"
-    t.string  "adjective_three"
-    t.string  "verb"
-    t.string  "adjective_four"
-    t.integer "number"
-    t.string  "noun"
-    t.string  "color"
-    t.string  "adjective_five"
-    t.string  "sender"
-    t.string  "noun_two"
-  end
-
 end

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :valentines
-  root 'welcome#index'
+  resources :items
+  root 'items#new'
 
 end
