@@ -13,6 +13,7 @@ class ItemsController < ApplicationController
   end
 
   def create
+    params[:item][:sentence_id] = rand(1..6)
     @item = Item.new(items_params)
     if @item.save
       redirect_to item_path(@item)
