@@ -1,5 +1,5 @@
 <%= form_for(@item, html: {class: "form-horizontal"}) do |f| %>
-    <%- Item.column_names.except('id', 'created_at', 'updated_at', 'sentence_id').each do |field| %>
+    <%- Item.column_names.reject { |c| c.in? ['id', 'created_at', 'updated_at', 'sentence_id'] }.each do |field| %>
         <div class="form-group">
           <label class="control-label col-md-2">
             <%= f.label field, field.to_s.titleize %>
