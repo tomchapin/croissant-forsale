@@ -1,18 +1,24 @@
-default: &default
+config: &config
   adapter: postgresql
   encoding: unicode
   pool: 5
+  timeout: 5000
+
+credentials: &credentials
+  host:     <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] || ENV['PG_HOST'] || "localhost" %>
+  port:     <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] || ENV['PG_PORT'] %>
+  username: <%= ENV['PG_USER'] || "croissant" %>
 
 development:
-  <<: *default
-  user: croissant
+  <<: *config
+  <<: *credentials
   database: croissant_development
 
 test:
-  <<: *default
-  user: croissant
+  <<: *config
+  <<: *credentials
   database: croissant_test
 
 production:
-  <<: *default
+  <<: *config
   url: <%= ENV['DATABASE_URL'] %>
