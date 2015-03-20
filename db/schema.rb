@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150213071822) do
+ActiveRecord::Schema.define(version: 20150320012741) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "items", force: :cascade do |t|
+    t.string  "noun_one"
+    t.string  "verb_one"
+    t.string  "noun_two"
+    t.string  "adjective_one"
+    t.string  "adjective_two"
+    t.string  "verb_two"
+    t.integer "number"
+    t.string  "name"
+    t.integer "sentence_id"
+  end
 
   create_table "valentines", force: :cascade do |t|
     t.string  "adjective_one"
